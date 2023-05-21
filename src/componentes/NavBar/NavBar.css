@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  background-color: beige;
+  padding: 0 2rem 0 2rem;
+}
+
+li {
+  display: inline-block;
+  margin: 1rem;
+  cursor: pointer;
+}
