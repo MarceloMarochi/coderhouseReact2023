@@ -1,5 +1,6 @@
 import React from "react";
 import "./Item.css";
+import { Link } from "react-router-dom";
 
 const Item = ({ id, nombre, precio, img, descripcion }) => {
   return (
@@ -9,7 +10,10 @@ const Item = ({ id, nombre, precio, img, descripcion }) => {
       <p>Precio: {precio}</p>
       <p>ID: {id}</p>
       <p>Descripcion: {descripcion}</p>
-      <button className="btnProducto">Ver Detalles</button>
+      {/* <button className="btnProducto">Ver Detalles</button> */}
+
+      {/* ALT + 96 para hace (`) */}
+      <Link to={`/item/${id}`}>Ver Detalle</Link>
     </div>
   );
 };
