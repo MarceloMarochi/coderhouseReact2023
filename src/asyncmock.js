@@ -1,7 +1,7 @@
 // Simulacion de una peticion a un servidor que estamos desarrollando a nivel de la carpeta src
 // Tiene base de datos y una funcion que retorna una promesa con una demora de 2 segundos para gemnerar retrasos en la red
 
-const productos = [
+/* const productos = [
   {
     nombre: "Simple",
     precio: 1500,
@@ -69,3 +69,4 @@ export const getProductosPorCategoria = (idCategoria) => {
     }, 100);
   });
 };
+ */

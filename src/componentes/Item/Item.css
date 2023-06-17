@@ -1,5 +1,5 @@
 .cardProducto {
-  background-color: rgb(252, 88, 88);
+  background-color: rgb(226, 0, 0);
   border-radius: 10px;
   width: 15rem;
   padding: 1rem;
@@ -17,11 +17,18 @@
 }
 
 .btnProducto {
-  background-color: rgb(114, 0, 0);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
   font-size: 1rem;
+  display: inline-block;
   width: 8rem;
   border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 p {

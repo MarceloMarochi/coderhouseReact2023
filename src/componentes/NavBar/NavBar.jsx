@@ -17,14 +17,26 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to={"/categoria/2"}>Hamburguesas</NavLink>
+            <NavLink
+              className="miBtn"
+              activeClassName="active"
+              to={"/categoria/2"}
+            >
+              Hamburguesas
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/categoria/3"}>Combos</NavLink>
+            <NavLink
+              className="miBtn"
+              activeClassName="active"
+              to={"/categoria/3"}
+            >
+              Combos
+            </NavLink>
           </li>
         </ul>
       </nav>
-      <CartWidget></CartWidget>
+      <CartWidget />
     </header>
   );
 };

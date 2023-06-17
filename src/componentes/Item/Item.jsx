@@ -13,7 +13,9 @@ const Item = ({ id, nombre, precio, img, descripcion }) => {
       {/* <button className="btnProducto">Ver Detalles</button> */}
 
       {/* ALT + 96 para hace (`) */}
-      <Link to={`/item/${id}`}>Ver Detalle</Link>
+      <Link className="btnProducto" to={`/item/${id}`}>
+        Ver Detalle
+      </Link>
     </div>
   );
 };

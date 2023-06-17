@@ -1,8 +1,9 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../service/config";
 import { collection, addDoc } from "firebase/firestore";
+import "./Checkout.css";
 
 const Checkout = () => {
   const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -60,7 +61,7 @@ const Checkout = () => {
   return (
     <div>
       <h2>Checkout</h2>
-      <form onSubmit={manejadorSubmit}>
+      <form onSubmit={manejadorSubmit} className="formulario">
         {carrito.map((producto) => (
           <div key={producto.item.id}>
             <p>
@@ -74,7 +75,7 @@ const Checkout = () => {
 
         <hr />
 
-        <div>
+        <div className="form-group">
           <label htmlFor="">Nombre</label>
           <input
             type="text"
@@ -83,7 +84,7 @@ const Checkout = () => {
           />
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="">Apellido</label>
           <input
             type="text"
@@ -92,7 +93,7 @@ const Checkout = () => {
           />
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="">Telefono</label>
           <input
             type="text"
@@ -101,7 +102,7 @@ const Checkout = () => {
           />
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="">Email</label>
           <input
             type="text"
@@ -110,7 +111,7 @@ const Checkout = () => {
           />
         </div>
 
-        <div>
+        <div className="form-group">
           <label htmlFor="">Email Confirmacion</label>
           <input
             type="text"
@@ -124,7 +125,9 @@ const Checkout = () => {
         <button type="submit">Finalizar Orden</button>
 
         {ordenId && (
-          <strong>¡Gracias por tu compra! Numero de orden: {ordenId}</strong>
+          <strong className="orderId">
+            ¡Gracias por tu compra! Numero de orden: {ordenId}
+          </strong>
         )}
       </form>
     </div>
