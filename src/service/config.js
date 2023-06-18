@@ -2,7 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDbiESNxDepy3Y-z3P9ycwLVBlsogWZ3Sc",
+  /* apiKey: "AIzaSyDbiESNxDepy3Y-z3P9ycwLVBlsogWZ3Sc", */
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "stroke-stone-burger.firebaseapp.com",
   projectId: "stroke-stone-burger",
   storageBucket: "stroke-stone-burger.appspot.com",
